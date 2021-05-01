@@ -8,6 +8,6 @@
   "I don't do a whole lot ... yet."
   [fp & args]
   (let [code (slurp fp)
-        json (json/write-str code)]
+        json (json/write-str (read-string code)]
     ;; (p/pprint json)
-    (print json)))
+        (print json)))
