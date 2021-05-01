@@ -1,6 +1,11 @@
 # clojure2json
 
-FIXME: description
+
+I want to convert clojure code into json, so I
+can query it.
+
+I would also prefer to do this via =antlr=, so
+I can do the same for other languages.
 
 ## Installation
 
