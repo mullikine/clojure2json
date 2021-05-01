@@ -7,9 +7,8 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [fp & args]
-  (let [code (slurp fp)]
-    [json (json/write-str code)]
+  (let [code (slurp fp)
+        json (json/write-str code)]
     (p/pprint json))
-
 
   (println "Hello, World!"))
