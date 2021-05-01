@@ -28,8 +28,6 @@
     map?     (into {} (map #(mapv code-to-json %) x))
     (throw (Exception. (format "Unsupported type: %s" (type x))))))
 
-
-
 ;; This appears to hang
 (defn tv
   ""
@@ -37,11 +35,11 @@
   (sh "tv" :in s)
   s)
 
-;; (defn pprint-to-string
-;;   ""
-;;   [o]
-;;   (with-out-str (clojure.pprint/pprint o )))
-;; (def pps pprint-to-string)
+(defn pprint-to-string
+  ""
+  [o]
+  (with-out-str (clojure.pprint/pprint o )))
+(def pps pprint-to-string)
 
 (defn -main
   "I don't do a whole lot ... yet."
