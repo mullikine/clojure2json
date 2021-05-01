@@ -9,4 +9,5 @@
   [fp & args]
   (let [code (slurp fp)
         json (json/write-str code)]
-    (p/pprint json)))
+    ;; (p/pprint json)
+    (print json)))
