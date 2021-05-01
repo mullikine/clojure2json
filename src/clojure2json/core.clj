@@ -59,6 +59,6 @@
                               ;; (tv code)
                               (str "(" code ")")))
         ]
-    (p/pprint json)
-    ; (print json)
+    ; (p/pprint json)
+    (print json)
     ))
