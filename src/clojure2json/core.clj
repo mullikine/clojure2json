@@ -15,6 +15,9 @@
   "I don't do a whole lot ... yet."
   [fp & args]
   (let [code (slurp fp)
-        json (json/write-str (read-string (tv code)))]
+        json (json/write-str (read-string
+                              (tv code)
+                              ;; code
+                              ))]
     ;; (p/pprint json)
     (print json)))
