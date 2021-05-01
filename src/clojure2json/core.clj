@@ -8,8 +8,6 @@
 (require '[clojure.data.json :as json])
 (use '[clojure.java.shell :only [sh]])
 
-
-
 ; Context:
 ; http://stackoverflow.com/questions/3436216/how-to-map-clojure-code-to-and-from-json
 
